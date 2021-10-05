@@ -1,0 +1,29 @@
+<properties xmlns="http://schemas.sulu.io/template/template"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+    <block name="cta-link" default-type="cta-link">
+        <types>
+            <type name="cta-link">
+                <meta>
+                    <title>CTA External Link</title>
+                </meta>
+                <properties>
+                    <property name="text" type="text_line">
+                        <meta>
+                            <title lang="es">Texto CTA</title>
+                            <title lang="en">Texto CTA</title>
+                        </meta>
+                    </property>
+                       <property name="link" type="text_line" mandatory="true">
+                        <meta>
+                            <title lang="es">Enlace Externo</title>
+                            <title lang="en">External Link</title>
+                            <info_text lang="es">Ej: https://example.com/ruta ó /ruta</info_text>
+                            <info_text lang="en">Ej: https://example.com/ruta ó /ruta</info_text>
+                        </meta>
+                    </property>
+                </properties>
+            </type>
+        </types>
+    </block>
+</properties>

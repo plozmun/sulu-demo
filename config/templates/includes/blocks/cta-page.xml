@@ -1,0 +1,29 @@
+<properties xmlns="http://schemas.sulu.io/template/template"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+    <block name="cta-page" default-type="cta-page">
+        <types>
+            <type name="cta-page">
+                <meta>
+                    <title>CTA Page</title>
+                </meta>
+                <properties>
+                    <property name="text" type="text_line">
+                        <meta>
+                            <title lang="es">Texto CTA</title>
+                            <title lang="en">Texto CTA</title>
+                        </meta>
+                    </property>
+                    <property name="link" type="single_page_selection" mandatory="true">
+                        <meta>
+                            <title lang="es">Página</title>
+                            <title lang="en">Page</title>
+                            <info_text lang="en">Select page</info_text>
+                            <info_text lang="es">Selecciona página</info_text>
+                        </meta>
+                    </property>
+                </properties>
+            </type>
+        </types>
+    </block>
+</properties>

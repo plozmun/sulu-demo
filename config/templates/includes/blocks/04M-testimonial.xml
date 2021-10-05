@@ -1,0 +1,38 @@
+<properties xmlns="http://schemas.sulu.io/template/template"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+    <block name="block" default-type="04M-testimonial">
+        <types>
+            <type name="04M-testimonial">
+                <meta>
+                    <title lang="es">04M - Testimonios</title>
+                    <title lang="en">04M - Testimonial</title>
+                </meta>
+                <properties>
+                    <property name="title" type="text_line">
+                        <meta>
+                            <title lang="es">Título</title>
+                            <title lang="en">Título</title>
+                        </meta>
+                    </property>
+                    <property name="subtitle" type="text_line">
+                        <meta>
+                            <title lang="es">Subtítulo</title>
+                            <title lang="en">Subitle</title>
+                        </meta>
+                    </property>
+                    <property name="items" type="snippet_selection">
+                        <meta>
+                            <title lang="es">Testimonios</title>
+                            <title lang="en">Testimonials</title>
+                        </meta>
+
+                        <params>
+                            <param name="types" value="default"/>
+                        </params>
+                    </property>
+                </properties>
+            </type>
+        </types>
+    </block>
+</properties>

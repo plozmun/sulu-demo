@@ -1,0 +1,26 @@
+<properties xmlns="http://schemas.sulu.io/template/template"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xi="http://www.w3.org/2001/XInclude"
+            xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+    <block name="block" default-type="11M-numbers">
+        <types>
+            <type name="11M-numbers">
+                <meta>
+                    <title lang="es">11M - Números</title>
+                    <title lang="en">11M - Numbers</title>
+                </meta>
+                <properties>
+                    <property name="title" type="text_line">
+                        <meta>
+                            <title lang="es">Título</title>
+                            <title lang="en">Título</title>
+                        </meta>
+                    </property>
+
+                    <xi:include href="card-number.xml"
+                                xpointer="xmlns(sulu=http://schemas.sulu.io/template/template)xpointer(/sulu:properties/sulu:block)"/>
+                </properties>
+            </type>
+        </types>
+    </block>
+</properties>

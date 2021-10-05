@@ -1,0 +1,66 @@
+<properties xmlns="http://schemas.sulu.io/template/template"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:xi="http://www.w3.org/2001/XInclude"
+            xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+    <block name="items" default-type="card-number">
+        <types>
+            <type name="card-number">
+                <meta>
+                    <title lang="es">Card número</title>
+                    <title lang="en">Card number</title>
+                </meta>
+                <properties>
+                    <property name="number" type="number">
+                        <meta>
+                            <title lang="es">Número</title>
+                            <title lang="en">Number</title>
+                        </meta>
+                    </property>
+                    <property name="title" type="text_line">
+                        <meta>
+                            <title lang="es">Título</title>
+                            <title lang="en">Title</title>
+                        </meta>
+                    </property>
+                    <property name="content" type="text_area">
+                        <meta>
+                            <title lang="es">Contenido</title>
+                            <title lang="en">Content</title>
+                        </meta>
+                    </property>
+                    <property name="symbol" type="single_select">
+                        <meta>
+                            <title lang="en">Symbol</title>
+                            <title lang="en">Símbolo</title>
+                        </meta>
+
+                        <params>
+                            <param name="default_value" value="plus"/>
+
+                            <param name="values" type="collection">
+                                <param name="plus" value="plus">
+                                    <meta>
+                                        <title lang="en">Plus</title>
+                                        <title lang="es">Plus</title>
+                                    </meta>
+                                </param>
+
+                                <param name="percentage" value="percentage">
+                                    <meta>
+                                        <title lang="en">Percentage</title>
+                                        <title lang="es">Percentage</title>
+                                    </meta>
+                                </param>
+                            </param>
+                        </params>
+                    </property>
+
+                    <xi:include href="ctas.xml"
+                                xpointer="xmlns(sulu=http://schemas.sulu.io/template/template)xpointer(/sulu:properties/sulu:block)"/>
+
+                </properties>
+            </type>
+        </types>
+    </block>
+</properties>
+
